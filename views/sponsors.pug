@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts
+  script(src='/static/script.js')
+
+block style 
+     style
+      include ../static/stye.css
+block content
+     nav#navbar 
+
+      ul 
+        li #[a(href="/") Home]
+        li #[a(href="/about") About us]
+        li #[a(href="/Services") Services]
+        li #[a(href="/Class") Class info]
+        li #[a(href="/contact") Contact us]
+        li #[a(href="/sponsors") Our sponsors]
+
+      hr
+
+     nav#header  
+      ul 
+        li #[a(href="#") Courses:]
+        li #[a(href="#") Hiphop]
+        li #[a(href="#") Belly]
+        li #[a(href="#") Break dance ]
+        li #[a(href="#") Salsa]
+        li #[a(href="#") Tap dance]
+        li #[a(href="#") Folk dance]
+        li #[a(href="#") Jazz]
+
+    
+     section#sp 
+      h2 Our sponsors 
+      div#clint
+        img(src="../static/mic.png", alt="", class="spimg")
+        img(src="../static/face.png", alt="", class="spimg")
+        img(src="../static/app1.png", alt="", class="spimg")
+        img(src="../static/inst.jpg", alt="", class="spimg")

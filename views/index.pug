@@ -1,0 +1,73 @@
+//- index.pug
+doctype html
+html
+  head
+
+     style
+      include ../static/stye.css
+  body
+    nav#navbar 
+
+      ul 
+        li #[a(href="/") Home]
+        li #[a(href="/") About us]
+        li #[a(href="/") Services]
+        li #[a(href="/") Class info]
+        li #[a(href="/") Contact us]
+        li #[a(href="/") Our sponsors]
+
+      hr
+
+    nav#header  
+      ul 
+        li #[a(href="/") Courses:]
+        li #[a(href="/") Hiphop]
+        li #[a(href="/") Belly]
+        li #[a(href="/") Break dance ]
+        li #[a(href="/") Salsa]
+        li #[a(href="/") Tap dance]
+        li #[a(href="/") Folk dance]
+        li #[a(href="/") Jazz]
+
+  
+
+
+    section#intro 
+      div  welcome to vansh`s dance academy 
+      div join us now! 
+
+      
+    
+    //- section#plan 
+    //-  h2.item Plan for our students
+    //-  p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores illum consequatur explicabo tenetur voluptate vitae quidem tempora est sint, minus aliquid voluptatum ab dolorum?
+
+    section#sp 
+      h2 Our sponsors 
+      div#clint
+        img(src="../static/mic.png", alt="", class="spimg")
+        img(src="../static/face.png", alt="", class="spimg")
+        img(src="../static/app1.png", alt="", class="spimg")
+        img(src="../static/inst.jpg", alt="", class="spimg")
+
+
+    div.fom
+      h2 Fill this form!!
+      <form action="/" method="post">
+        <input type="text" name="name" id="name" placeholder="enter your name">
+        <input type="text" name="age" id="age" placeholder="enter your age">
+        <input type="text" name="gender" id="gender" placeholder="enter your gender">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea>
+        <button class="btn" >sumite</button>
+      </form>
+  
+
+
+
+    footer#footer COPYRIGTH &copy 2019 ,  ALL RIGTHS ARE RESERVED BY WWW.DANCE INDIA.COM 
+      h3 Follow us on :
+      div.img
+        img(src="../static/face.png", alt="")
+
+    script
+      include ../static/script.js
